@@ -48,7 +48,6 @@
                                     <td>{{ $tanggapan->tanggapan }}</td>
                                     <td>{{ $tanggapan->petugas->nama_lengkap ?? 'Tidak Ada Data' }}</td>
                                     <td>
-                                        <a href="/edit_tanggapan/{{ $tanggapan->id }}" class="btn btn-sm btn-warning">E</a>
                                         <form id="delete-tanggapan-form-{{ $tanggapan->id }}" action="/destroy_tanggapan/{{ $tanggapan->id }}" method="POST" style="display: inline-block;">
                                             @csrf
                                             @method('DELETE')

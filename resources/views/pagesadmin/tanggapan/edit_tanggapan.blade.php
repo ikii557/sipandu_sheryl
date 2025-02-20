@@ -48,7 +48,8 @@
                 <div class="col-12">
                     <label for="tanggapan" class="form-label">Tanggapan</label>
                     <textarea class="form-control" name="tanggapan" rows="4" placeholder="Masukkan tanggapan baru">
-                        {{ $pengaduans->tanggapan ? $pengaduans->tanggapan->tanggapan : '' }}
+                        {{ $pengaduans->first()->tanggapan ? $pengaduans->first()->tanggapan->tanggapan : '' }}
+
                     </textarea>
                     @error('tanggapan')
                         <div class="text-danger">{{ $message }}</div>

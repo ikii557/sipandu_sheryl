@@ -348,6 +348,9 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+.register {
+  background-color: green !important;
+}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -499,7 +502,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f9f9fa;
+  background-color: #ffffff;
 }
 
 .section-title {

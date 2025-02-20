@@ -100,8 +100,8 @@ Route::middleware(['auth'])->group(function(){
         return view('index');
     });
 
-
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+    
 });
 
 

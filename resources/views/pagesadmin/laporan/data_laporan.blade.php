@@ -49,7 +49,7 @@
                                         <th>Nama Pengadu</th>
                                         <th>Kategori</th>
                                         <th>Status</th>
-                                        <th>Aksi</th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>

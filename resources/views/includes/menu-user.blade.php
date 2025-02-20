@@ -18,14 +18,24 @@
 
 
                      <!-- Signout tanpa button, menggunakan <a> -->
-                     <li>
-                         <a class="nav-link scrollto" href="{{ route('logout') }}">
-                             Signout
-                         </a>
-                         {{-- <form id="logout-form" action="{{ route('logoutmasyarakat') }}" method="POST" style="display: none;">
-                             @csrf
-                         </form> --}}
-                     </li>
+                        @if(Auth::check())
+                        <!-- Jika sudah login, tampilkan tombol Logout -->
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="btn btn-secondary btn-md">
+                                <i class="fa fa-sign-out-alt"></i> Logout
+                            </button>
+                        </form>
+                    @else
+                        <!-- Jika belum login, tampilkan tombol Login/Register -->
+                        <a href="{{ route('login') }}" class="btn btn-primary btn-md">
+                            <i class="fa fa-sign-in-alt"></i> Login
+                        </a>
+                        <a href="{{ route('register') }}" class="btn btn-success btn-md">
+                            <i class="fa fa-user-plus"></i> Register
+                        </a>
+                    @endif
+                    
                  </ul>
 
                  <i class="bi bi-list mobile-nav-toggle"></i>

@@ -33,21 +33,19 @@
                             <p class="text-muted text-sm"><b>Jenis Kelamin: </b> {{ auth()->user()->jenis_kelamin ?? '-' }}</p>
                             <ul class="ml-4 mb-0 fa-ul text-muted">
                                 <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Alamat: {{ auth()->user()->alamat ?? '-' }}</li>
-                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone: {{ auth()->user()->phone ?? '-' }}</li>
-                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-envelope"></i></span> Email: {{ auth()->user()->email ?? '-' }}</li>
+                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone: {{ auth()->user()->no_telepon ?? '-' }}</li>
+                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-envelope"></i></span> username: {{ auth()->user()->username ?? '-' }}</li>
                                 <li class="small"><span class="fa-li"><i class="fas fa-lg fa-briefcase"></i></span> Jabatan: {{ auth()->user()->role ?? '-' }}</li>
                             </ul>
                         </div>
                         <div class="col-5 text-center">
-                            <img src="../../dist/img/user1-128x128.jpg" alt="" class="img-circle img-fluid">
+                            <img src="{{asset('assetsuserr/img/hoshzips.jpeg')}}" alt="" class="img-circle img-fluid" style="height: 200px; width: 200px;">
                         </div>
                     </div>
                 </div>
                 <div class="card-footer">
                     <div class="text-right">
-                        <a href="/edit_profile/" class="btn btn-sm btn-primary">
-                            <i class="fas fa-user"></i> Ubah Profile
-                        </a>
+                        
                     </div>
                 </div>
             </div>

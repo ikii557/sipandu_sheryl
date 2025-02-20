@@ -97,20 +97,15 @@ public function storeregister(Request $request)
         ])->withInput($request->only('username'));
     }
 
-
-
-
-
-
-
     public function logout(Request $request)
     {
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-
+    
         return redirect('/dashboard_masyarakat')->with('message', 'Logout berhasil!');
     }
+    
 
 
 }

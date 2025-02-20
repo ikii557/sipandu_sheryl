@@ -1,30 +1,24 @@
-@extends('layoutsmasyarakat.app')
-@section('contentmasyarakat')
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center">
+@extends('layouts.layoutuser')
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h1>Aplikasi Pengaduan Online</h1>
-                <h5>Suara Anda, Perubahan Kami,
-                    Laporkan Sekarang, Wujudkan Perubahan!.</h5>
-                <div class="video_service_btn">
-                    <a href="/register" class="boxed-btn3"><i class="fa fa-sign-in"> Registrasi</i></a>
-                    <a href="/loginmasyarakat" class="boxed-btn3"> <i class="fa fa-sign-in"></i>
-                        Login Masyarakat</a>
-                    </div>
+@section('contentuser')
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h1>SIPANDU</h1>
+                    <h5>Sistem Pengaduan Terpadu.</h5>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img">
-                    <img src="/assetsuser/img/foto pengadu 1.png" class="img-fluid animated" alt="">
+                    <img src="/assetsuser/img/hero-img.png" class="img-fluid animated" alt="">
                 </div>
             </div>
         </div>
 
-</section><!-- End Hero -->
+    </section><!-- End Hero -->
 
-<main id="main">
-    <section id="pengaduan" class="register">
+    <section id="pengaduan" class="register" style="background-color: green;">
       <div class="container">
         <div class="row">
 

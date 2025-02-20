@@ -167,7 +167,7 @@ public function data()
         // Ambil tanggapan berdasarkan pengaduan_id yang sesuai
         $tanggapans = Tanggapan::where('pengaduan_id', $id)->get();
 
-        return view('masyarakat.tanggapanadmin', compact('pengaduans', 'tanggapans'));
+        return view('pagesmasyarakat.tanggapanadmin', compact('pengaduans', 'tanggapans'));
     }
 
 
